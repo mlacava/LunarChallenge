@@ -1,0 +1,60 @@
+# Build results
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Logs
+*.log
+
+# Visual Studio Code
+.vscode/
+
+# Rider
+.idea/
+*.sln.iml
+
+# Packages
+*.nupkg
+*.snupkg
+packages/
+
+# Visual Studio working files
+.vs/
+
+# Temporary files
+*.tmp
+*.temp
+*.cache
+*.csproj.user
+
+# Generated files
+*.g.*
+*.generated.cs
+
+# Publish output
+wwwroot/
+publish/
+
+# Resharper
+_ReSharper*/
+*.DotSettings.user
+
+# Azure
+.localhistory/
+*.publishsettings
+
+Common/bin
+Common/obj
+Data/bin
+Data/obj
+Logic/bin
+Logic/obj
+RocketApi/bin
+RocketApi/obj
+RocketApi.Tests/bin
+RocketApi.Tests/obj

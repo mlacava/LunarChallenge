@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lacav\\source\\repos\\LunarChallenge\\RocketsApi.Tests\\RocketsApi.Tests.csproj": {}
+    "C:\\Users\\lacav\\Documents\\GitHub\\LunarChallenge\\RocketsApi.Tests\\RocketsApi.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lacav\\source\\repos\\LunarChallenge\\Common\\Common.csproj": {
+    "C:\\Users\\lacav\\Documents\\GitHub\\LunarChallenge\\Common\\Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lacav\\source\\repos\\LunarChallenge\\Common\\Common.csproj",
+        "projectUniqueName": "C:\\Users\\lacav\\Documents\\GitHub\\LunarChallenge\\Common\\Common.csproj",
         "projectName": "Common",
-        "projectPath": "C:\\Users\\lacav\\source\\repos\\LunarChallenge\\Common\\Common.csproj",
+        "projectPath": "C:\\Users\\lacav\\Documents\\GitHub\\LunarChallenge\\Common\\Common.csproj",
         "packagesPath": "C:\\Users\\lacav\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lacav\\source\\repos\\LunarChallenge\\Common\\obj\\",
+        "outputPath": "C:\\Users\\lacav\\Documents\\GitHub\\LunarChallenge\\Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -70,14 +70,14 @@
         }
       }
     },
-    "C:\\Users\\lacav\\source\\repos\\LunarChallenge\\Data\\Data.csproj": {
+    "C:\\Users\\lacav\\Documents\\GitHub\\LunarChallenge\\Data\\Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lacav\\source\\repos\\LunarChallenge\\Data\\Data.csproj",
+        "projectUniqueName": "C:\\Users\\lacav\\Documents\\GitHub\\LunarChallenge\\Data\\Data.csproj",
         "projectName": "Data",
-        "projectPath": "C:\\Users\\lacav\\source\\repos\\LunarChallenge\\Data\\Data.csproj",
+        "projectPath": "C:\\Users\\lacav\\Documents\\GitHub\\LunarChallenge\\Data\\Data.csproj",
         "packagesPath": "C:\\Users\\lacav\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lacav\\source\\repos\\LunarChallenge\\Data\\obj\\",
+        "outputPath": "C:\\Users\\lacav\\Documents\\GitHub\\LunarChallenge\\Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -99,8 +99,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\lacav\\source\\repos\\LunarChallenge\\Common\\Common.csproj": {
-                "projectPath": "C:\\Users\\lacav\\source\\repos\\LunarChallenge\\Common\\Common.csproj"
+              "C:\\Users\\lacav\\Documents\\GitHub\\LunarChallenge\\Common\\Common.csproj": {
+                "projectPath": "C:\\Users\\lacav\\Documents\\GitHub\\LunarChallenge\\Common\\Common.csproj"
               }
             }
           }
@@ -154,14 +154,14 @@
         }
       }
     },
-    "C:\\Users\\lacav\\source\\repos\\LunarChallenge\\Logic\\Logic.csproj": {
+    "C:\\Users\\lacav\\Documents\\GitHub\\LunarChallenge\\Logic\\Logic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lacav\\source\\repos\\LunarChallenge\\Logic\\Logic.csproj",
+        "projectUniqueName": "C:\\Users\\lacav\\Documents\\GitHub\\LunarChallenge\\Logic\\Logic.csproj",
         "projectName": "Logic",
-        "projectPath": "C:\\Users\\lacav\\source\\repos\\LunarChallenge\\Logic\\Logic.csproj",
+        "projectPath": "C:\\Users\\lacav\\Documents\\GitHub\\LunarChallenge\\Logic\\Logic.csproj",
         "packagesPath": "C:\\Users\\lacav\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lacav\\source\\repos\\LunarChallenge\\Logic\\obj\\",
+        "outputPath": "C:\\Users\\lacav\\Documents\\GitHub\\LunarChallenge\\Logic\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -183,11 +183,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\lacav\\source\\repos\\LunarChallenge\\Common\\Common.csproj": {
-                "projectPath": "C:\\Users\\lacav\\source\\repos\\LunarChallenge\\Common\\Common.csproj"
+              "C:\\Users\\lacav\\Documents\\GitHub\\LunarChallenge\\Common\\Common.csproj": {
+                "projectPath": "C:\\Users\\lacav\\Documents\\GitHub\\LunarChallenge\\Common\\Common.csproj"
               },
-              "C:\\Users\\lacav\\source\\repos\\LunarChallenge\\Data\\Data.csproj": {
-                "projectPath": "C:\\Users\\lacav\\source\\repos\\LunarChallenge\\Data\\Data.csproj"
+              "C:\\Users\\lacav\\Documents\\GitHub\\LunarChallenge\\Data\\Data.csproj": {
+                "projectPath": "C:\\Users\\lacav\\Documents\\GitHub\\LunarChallenge\\Data\\Data.csproj"
               }
             }
           }
@@ -211,6 +211,14 @@
             "Mapster": {
               "target": "Package",
               "version": "[7.4.0, )"
+            },
+            "Microsoft.Extensions.Hosting.Abstractions": {
+              "target": "Package",
+              "version": "[9.0.9, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.4, )"
             }
           },
           "imports": [
@@ -233,14 +241,14 @@
         }
       }
     },
-    "C:\\Users\\lacav\\source\\repos\\LunarChallenge\\RocketsApi.Tests\\RocketsApi.Tests.csproj": {
+    "C:\\Users\\lacav\\Documents\\GitHub\\LunarChallenge\\RocketsApi.Tests\\RocketsApi.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lacav\\source\\repos\\LunarChallenge\\RocketsApi.Tests\\RocketsApi.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\lacav\\Documents\\GitHub\\LunarChallenge\\RocketsApi.Tests\\RocketsApi.Tests.csproj",
         "projectName": "RocketsApi.Tests",
-        "projectPath": "C:\\Users\\lacav\\source\\repos\\LunarChallenge\\RocketsApi.Tests\\RocketsApi.Tests.csproj",
+        "projectPath": "C:\\Users\\lacav\\Documents\\GitHub\\LunarChallenge\\RocketsApi.Tests\\RocketsApi.Tests.csproj",
         "packagesPath": "C:\\Users\\lacav\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lacav\\source\\repos\\LunarChallenge\\RocketsApi.Tests\\obj\\",
+        "outputPath": "C:\\Users\\lacav\\Documents\\GitHub\\LunarChallenge\\RocketsApi.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -262,8 +270,17 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\lacav\\source\\repos\\LunarChallenge\\RocketsApi\\RocketsApi.csproj": {
-                "projectPath": "C:\\Users\\lacav\\source\\repos\\LunarChallenge\\RocketsApi\\RocketsApi.csproj"
+              "C:\\Users\\lacav\\Documents\\GitHub\\LunarChallenge\\Common\\Common.csproj": {
+                "projectPath": "C:\\Users\\lacav\\Documents\\GitHub\\LunarChallenge\\Common\\Common.csproj"
+              },
+              "C:\\Users\\lacav\\Documents\\GitHub\\LunarChallenge\\Data\\Data.csproj": {
+                "projectPath": "C:\\Users\\lacav\\Documents\\GitHub\\LunarChallenge\\Data\\Data.csproj"
+              },
+              "C:\\Users\\lacav\\Documents\\GitHub\\LunarChallenge\\Logic\\Logic.csproj": {
+                "projectPath": "C:\\Users\\lacav\\Documents\\GitHub\\LunarChallenge\\Logic\\Logic.csproj"
+              },
+              "C:\\Users\\lacav\\Documents\\GitHub\\LunarChallenge\\RocketsApi\\RocketsApi.csproj": {
+                "projectPath": "C:\\Users\\lacav\\Documents\\GitHub\\LunarChallenge\\RocketsApi\\RocketsApi.csproj"
               }
             }
           }
@@ -337,14 +354,14 @@
         }
       }
     },
-    "C:\\Users\\lacav\\source\\repos\\LunarChallenge\\RocketsApi\\RocketsApi.csproj": {
+    "C:\\Users\\lacav\\Documents\\GitHub\\LunarChallenge\\RocketsApi\\RocketsApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lacav\\source\\repos\\LunarChallenge\\RocketsApi\\RocketsApi.csproj",
+        "projectUniqueName": "C:\\Users\\lacav\\Documents\\GitHub\\LunarChallenge\\RocketsApi\\RocketsApi.csproj",
         "projectName": "RocketsApi",
-        "projectPath": "C:\\Users\\lacav\\source\\repos\\LunarChallenge\\RocketsApi\\RocketsApi.csproj",
+        "projectPath": "C:\\Users\\lacav\\Documents\\GitHub\\LunarChallenge\\RocketsApi\\RocketsApi.csproj",
         "packagesPath": "C:\\Users\\lacav\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lacav\\source\\repos\\LunarChallenge\\RocketsApi\\obj\\",
+        "outputPath": "C:\\Users\\lacav\\Documents\\GitHub\\LunarChallenge\\RocketsApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -366,14 +383,14 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\lacav\\source\\repos\\LunarChallenge\\Common\\Common.csproj": {
-                "projectPath": "C:\\Users\\lacav\\source\\repos\\LunarChallenge\\Common\\Common.csproj"
+              "C:\\Users\\lacav\\Documents\\GitHub\\LunarChallenge\\Common\\Common.csproj": {
+                "projectPath": "C:\\Users\\lacav\\Documents\\GitHub\\LunarChallenge\\Common\\Common.csproj"
               },
-              "C:\\Users\\lacav\\source\\repos\\LunarChallenge\\Data\\Data.csproj": {
-                "projectPath": "C:\\Users\\lacav\\source\\repos\\LunarChallenge\\Data\\Data.csproj"
+              "C:\\Users\\lacav\\Documents\\GitHub\\LunarChallenge\\Data\\Data.csproj": {
+                "projectPath": "C:\\Users\\lacav\\Documents\\GitHub\\LunarChallenge\\Data\\Data.csproj"
               },
-              "C:\\Users\\lacav\\source\\repos\\LunarChallenge\\Logic\\Logic.csproj": {
-                "projectPath": "C:\\Users\\lacav\\source\\repos\\LunarChallenge\\Logic\\Logic.csproj"
+              "C:\\Users\\lacav\\Documents\\GitHub\\LunarChallenge\\Logic\\Logic.csproj": {
+                "projectPath": "C:\\Users\\lacav\\Documents\\GitHub\\LunarChallenge\\Logic\\Logic.csproj"
               }
             }
           }

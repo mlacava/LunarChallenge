@@ -1,4 +1,5 @@
 using Common.Commands;
+using Microsoft.AspNetCore.Mvc.Formatters;
 using Newtonsoft.Json;
 using System.Diagnostics;
 using System.Text;
@@ -19,7 +20,7 @@ namespace RocketsApi.Tests
 
 
         [Fact, Priority(1)]
-        public async Task Message_WhenCalling_WithRocketLaunchedType_ThenReturnsExpectedResponse()
+        public async Task Message_WhenCalling_With_RocketLaunched_Type_ThenReturnsExpectedResponse()
         {
             // Arrange
             var expectedStatusCode = System.Net.HttpStatusCode.OK;
@@ -82,17 +83,9 @@ namespace RocketsApi.Tests
         {
             // Arrange
             var expectedStatusCode = System.Net.HttpStatusCode.OK;
-            var requestContent = JsonConvert.SerializeObject(new { channel = Guid.Parse(newGuid) });
-
-            var request = new HttpRequestMessage
-            {
-                Method = HttpMethod.Get,
-                RequestUri = new Uri("/rocket", UriKind.Relative),
-                Content = new StringContent(requestContent, Encoding.UTF8, "application/json")
-            };
 
             // Act
-            var response = await _httpClient.SendAsync(request);
+            var response = await _httpClient.GetAsync(String.Format("/rocket?channel={0}", Guid.Parse(newGuid).ToString()));
             var stopwatch = Stopwatch.StartNew();
             var expectedContent =
                 new Data.Models.Rocket
@@ -106,6 +99,126 @@ namespace RocketsApi.Tests
 
             // Assert
             await TestHelpers.AssertResponseWithContentAsync(stopwatch, response, expectedStatusCode, expectedContent);
+        }
+
+        [Fact, Priority(4)]
+        public async Task Message_WhenCalling_With_RocketSpeedIncreased_Type_ThenReturnsExpectedResponse()
+        {
+            // Arrange
+            var expectedStatusCode = System.Net.HttpStatusCode.OK;
+            var expectedContent =
+                new MessageCommand
+                {
+                    Metadata = new Common.MessageMetadata
+                    {
+                        Channel = newGuid,
+                        MessageNumber = 1,
+                        MessageTime = DateTime.UtcNow,
+                        MessageType = "RocketSpeedIncreased"
+                    },
+                    Message = JsonObject.Parse(JsonConvert.SerializeObject(new
+                    {
+                        By = 2000
+                    }))!.AsObject()
+                };
+
+            var stopwatch = Stopwatch.StartNew();
+
+            // Act
+            var response = await _httpClient.PostAsync("/messages", TestHelpers.GetJsonStringContent(expectedContent));
+
+            // Assert
+            await TestHelpers.AssertResponseWithoutContentAsync<MessageCommand>(stopwatch, response, expectedStatusCode);
+        }
+
+        [Fact, Priority(5)]
+        public async Task Message_WhenCalling_With_RocketSpeedDecreased_Type_ThenReturnsExpectedResponse()
+        {
+            // Arrange
+            var expectedStatusCode = System.Net.HttpStatusCode.OK;
+            var expectedContent =
+                new MessageCommand
+                {
+                    Metadata = new Common.MessageMetadata
+                    {
+                        Channel = newGuid,
+                        MessageNumber = 1,
+                        MessageTime = DateTime.UtcNow,
+                        MessageType = "RocketSpeedDecreased"
+                    },
+                    Message = JsonObject.Parse(JsonConvert.SerializeObject(new
+                    {
+                        By = 2000
+                    }))!.AsObject()
+                };
+
+            var stopwatch = Stopwatch.StartNew();
+
+            // Act
+            var response = await _httpClient.PostAsync("/messages", TestHelpers.GetJsonStringContent(expectedContent));
+
+            // Assert
+            await TestHelpers.AssertResponseWithoutContentAsync<MessageCommand>(stopwatch, response, expectedStatusCode);
+        }
+
+        [Fact, Priority(6)]
+        public async Task Message_WhenCalling_With_RocketExploded_Type_ThenReturnsExpectedResponse()
+        {
+            // Arrange
+            var expectedStatusCode = System.Net.HttpStatusCode.OK;
+            var expectedContent =
+                new MessageCommand
+                {
+                    Metadata = new Common.MessageMetadata
+                    {
+                        Channel = newGuid,
+                        MessageNumber = 1,
+                        MessageTime = DateTime.UtcNow,
+                        MessageType = "RocketExploded"
+                    },
+                    Message = JsonObject.Parse(JsonConvert.SerializeObject(new
+                    {
+                        Reason = "PRESSURE_VESSEL_FAILURE"
+                    }))!.AsObject()
+                };
+
+            var stopwatch = Stopwatch.StartNew();
+
+            // Act
+            var response = await _httpClient.PostAsync("/messages", TestHelpers.GetJsonStringContent(expectedContent));
+
+            // Assert
+            await TestHelpers.AssertResponseWithoutContentAsync<MessageCommand>(stopwatch, response, expectedStatusCode);
+        }
+
+        [Fact, Priority(6)]
+        public async Task Message_WhenCalling_With_RocketMissionChanged_Type_ThenReturnsExpectedResponse()
+        {
+            // Arrange
+            var expectedStatusCode = System.Net.HttpStatusCode.OK;
+            var expectedContent =
+                new MessageCommand
+                {
+                    Metadata = new Common.MessageMetadata
+                    {
+                        Channel = newGuid,
+                        MessageNumber = 1,
+                        MessageTime = DateTime.UtcNow,
+                        MessageType = "RocketMissionChanged"
+                    },
+                    Message = JsonObject.Parse(JsonConvert.SerializeObject(new
+                    {
+                        NewMission = "SHUTTLE_MIR"
+                    }))!.AsObject()
+                };
+
+            var stopwatch = Stopwatch.StartNew();
+
+            // Act
+            var response = await _httpClient.PostAsync("/messages", TestHelpers.GetJsonStringContent(expectedContent));
+
+            // Assert
+            await TestHelpers.AssertResponseWithoutContentAsync<MessageCommand>(stopwatch, response, expectedStatusCode);
         }
     }
 }

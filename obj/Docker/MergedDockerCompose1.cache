@@ -1,4 +1,4 @@
-name: dockercompose3012123607144155694
+name: dockercompose3955474669515511123
 services:
   mongodb:
     container_name: mongodb
@@ -20,7 +20,7 @@ services:
         volume: {}
   rocketsapi:
     build:
-      context: C:\Users\lacav\source\repos\LunarChallenge
+      context: C:\Users\lacav\Documents\GitHub\LunarChallenge
       dockerfile: RocketsApi/Dockerfile
       args:
         BUILD_CONFIGURATION: Debug
@@ -65,12 +65,12 @@ services:
     tty: true
     volumes:
       - type: bind
-        source: C:\Users\lacav\source\repos\LunarChallenge\RocketsApi
+        source: C:\Users\lacav\Documents\GitHub\LunarChallenge\RocketsApi
         target: /app
         bind:
           create_host_path: true
       - type: bind
-        source: C:\Users\lacav\source\repos\LunarChallenge
+        source: C:\Users\lacav\Documents\GitHub\LunarChallenge
         target: /src
         bind:
           create_host_path: true
@@ -129,8 +129,8 @@ services:
           create_host_path: true
 networks:
   app-network:
-    name: dockercompose3012123607144155694_app-network
+    name: dockercompose3955474669515511123_app-network
     driver: bridge
 volumes:
   mongodb_data:
-    name: dockercompose3012123607144155694_mongodb_data
+    name: dockercompose3955474669515511123_mongodb_data

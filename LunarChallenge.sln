@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36518.9 d17.14
+VisualStudioVersion = 17.14.36518.9
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RocketsApi", "RocketsApi\RocketsApi.csproj", "{9F82A3C2-FFD8-463D-B97B-6D11D87E942B}"
 EndProject
@@ -12,6 +12,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logic", "Logic\Logic.csproj", "{8C823C04-518D-7F5D-DC1B-2C502C583C95}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{81DDED9D-158B-E303-5F62-77A2896D2A5A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RocketsApi.Tests", "RocketsApi.Tests\RocketsApi.Tests.csproj", "{C361E4C0-A3D9-86A3-4327-A5F7D12B86B1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C361E4C0-A3D9-86A3-4327-A5F7D12B86B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C361E4C0-A3D9-86A3-4327-A5F7D12B86B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C361E4C0-A3D9-86A3-4327-A5F7D12B86B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C361E4C0-A3D9-86A3-4327-A5F7D12B86B1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -2,7 +2,6 @@
 using Data.Models;
 using Logic.Interfaces;
 using Microsoft.AspNetCore.Mvc;
-using RocketsAPI.Queries.Request;
 
 namespace RocketsApi.Controllers
 {
@@ -35,11 +34,11 @@ namespace RocketsApi.Controllers
 
         [HttpGet("rocket")]
         [EndpointDescription("Returns a single rocket by its channel identifier.")]
-        public async Task<ActionResult<Rocket>> GetRocket([FromBody] GetRocketByIdQuery getRocketById)
+        public async Task<ActionResult<Rocket>> GetRocket([FromQuery] string channel)
         {
             try
             {
-                var rocket = await _rocketLogic.GetRocketAsync(getRocketById.Channel);
+                var rocket = await _rocketLogic.GetRocketAsync(channel);
 
                 return rocket is null ? NotFound() : Ok(rocket);
 
