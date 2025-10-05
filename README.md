@@ -93,6 +93,7 @@ The message object change depending of the messageType like this:
 
 
 ### Unit Tests
+**Requirements:** .NET Core 8 SDK to use .NET Cli
 >In the same directory of the solution exists another project called **RocketsApi.Tests**\
 ![App Screenshot](https://github.com/mlacava/SharedImages/blob/main/ProjectPath.png?raw=true)
 
