@@ -1,0 +1,50 @@
+name: dockercompose3012123607144155694
+services:
+  mongodb:
+    container_name: mongodb
+    environment:
+      MONGO_INITDB_ROOT_PASSWORD: password
+      MONGO_INITDB_ROOT_USERNAME: admin
+    image: mongo:6.0
+    networks:
+      app-network: null
+    ports:
+      - mode: ingress
+        target: 27017
+        published: "27017"
+        protocol: tcp
+    volumes:
+      - type: volume
+        source: mongodb_data
+        target: /data/db
+        volume: {}
+  rocketsapi:
+    build:
+      context: C:\Users\lacav\source\repos\LunarChallenge
+      dockerfile: RocketsApi/Dockerfile
+    depends_on:
+      mongodb:
+        condition: service_started
+        required: true
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_HTTP_PORTS: "8080"
+      MONGO_CONNECTION_STRING: mongodb://admin:password@mongodb:27017
+    image: rocketsapi
+    networks:
+      app-network: null
+    ports:
+      - mode: ingress
+        target: 8080
+        published: "8088"
+        protocol: tcp
+      - mode: ingress
+        target: 8080
+        protocol: tcp
+networks:
+  app-network:
+    name: dockercompose3012123607144155694_app-network
+    driver: bridge
+volumes:
+  mongodb_data:
+    name: dockercompose3012123607144155694_mongodb_data

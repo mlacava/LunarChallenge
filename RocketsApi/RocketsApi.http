@@ -1,0 +1,6 @@
+@RocketsApi_HostAddress = http://localhost:5062
+
+GET {{RocketsApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

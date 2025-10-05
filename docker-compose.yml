@@ -1,0 +1,31 @@
+services:
+  rocketsapi:
+    image: ${DOCKER_REGISTRY-}rocketsapi
+    build:
+      context: .
+      dockerfile: RocketsApi/Dockerfile
+    ports:
+        - "8088:8080"
+    networks:
+        - app-network
+    depends_on: 
+        - mongodb
+    environment:
+        - MONGO_CONNECTION_STRING=mongodb://admin:password@mongodb:27017
+  mongodb: 
+    image: mongo:6.0 
+    container_name: mongodb 
+    networks:
+        - app-network
+    ports: 
+        - "27017:27017" 
+    environment: 
+        MONGO_INITDB_ROOT_USERNAME: admin 
+        MONGO_INITDB_ROOT_PASSWORD: password 
+    volumes: 
+        - mongodb_data:/data/db  
+volumes:
+    mongodb_data:
+networks:
+  app-network:
+    driver: bridge
