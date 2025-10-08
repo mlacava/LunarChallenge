@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lacav\\Documents\\GitHub\\LunarChallenge\\Common\\Common.csproj": {}
+    "D:\\SourceCode\\GitHub\\LunarChallenge\\Common\\Common.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lacav\\Documents\\GitHub\\LunarChallenge\\Common\\Common.csproj": {
+    "D:\\SourceCode\\GitHub\\LunarChallenge\\Common\\Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lacav\\Documents\\GitHub\\LunarChallenge\\Common\\Common.csproj",
+        "projectUniqueName": "D:\\SourceCode\\GitHub\\LunarChallenge\\Common\\Common.csproj",
         "projectName": "Common",
-        "projectPath": "C:\\Users\\lacav\\Documents\\GitHub\\LunarChallenge\\Common\\Common.csproj",
-        "packagesPath": "C:\\Users\\lacav\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lacav\\Documents\\GitHub\\LunarChallenge\\Common\\obj\\",
+        "projectPath": "D:\\SourceCode\\GitHub\\LunarChallenge\\Common\\Common.csproj",
+        "packagesPath": "C:\\Users\\Lacav\\.nuget\\packages\\",
+        "outputPath": "D:\\SourceCode\\GitHub\\LunarChallenge\\Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\lacav\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Lacav\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

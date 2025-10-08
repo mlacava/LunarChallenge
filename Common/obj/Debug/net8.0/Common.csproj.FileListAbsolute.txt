@@ -20,3 +20,15 @@ C:\Users\lacav\source\repos\LunarChallenge\Common\obj\Debug\net8.0\Common.dll
 C:\Users\lacav\source\repos\LunarChallenge\Common\obj\Debug\net8.0\refint\Common.dll
 C:\Users\lacav\source\repos\LunarChallenge\Common\obj\Debug\net8.0\Common.pdb
 C:\Users\lacav\source\repos\LunarChallenge\Common\obj\Debug\net8.0\ref\Common.dll
+D:\SourceCode\GitHub\LunarChallenge\Common\bin\Debug\net8.0\Common.deps.json
+D:\SourceCode\GitHub\LunarChallenge\Common\bin\Debug\net8.0\Common.dll
+D:\SourceCode\GitHub\LunarChallenge\Common\bin\Debug\net8.0\Common.pdb
+D:\SourceCode\GitHub\LunarChallenge\Common\obj\Debug\net8.0\Common.GeneratedMSBuildEditorConfig.editorconfig
+D:\SourceCode\GitHub\LunarChallenge\Common\obj\Debug\net8.0\Common.AssemblyInfoInputs.cache
+D:\SourceCode\GitHub\LunarChallenge\Common\obj\Debug\net8.0\Common.AssemblyInfo.cs
+D:\SourceCode\GitHub\LunarChallenge\Common\obj\Debug\net8.0\Common.csproj.CoreCompileInputs.cache
+D:\SourceCode\GitHub\LunarChallenge\Common\obj\Debug\net8.0\Common.sourcelink.json
+D:\SourceCode\GitHub\LunarChallenge\Common\obj\Debug\net8.0\Common.dll
+D:\SourceCode\GitHub\LunarChallenge\Common\obj\Debug\net8.0\refint\Common.dll
+D:\SourceCode\GitHub\LunarChallenge\Common\obj\Debug\net8.0\Common.pdb
+D:\SourceCode\GitHub\LunarChallenge\Common\obj\Debug\net8.0\ref\Common.dll

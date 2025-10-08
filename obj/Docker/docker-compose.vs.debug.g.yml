@@ -14,15 +14,15 @@ services:
       - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
       - NUGET_FALLBACK_PACKAGES=/.nuget/fallbackpackages
     volumes:
-      - C:\Users\lacav\Documents\GitHub\LunarChallenge\RocketsApi:/app:rw
-      - C:\Users\lacav\Documents\GitHub\LunarChallenge:/src:rw
-      - C:\Users\lacav\vsdbg\vs2017u5:/remote_debugger:rw
-      - C:\Users\lacav\.nuget\packages:/.nuget/packages:ro
+      - D:\SourceCode\GitHub\LunarChallenge\RocketsApi:/app:rw
+      - D:\SourceCode\GitHub\LunarChallenge:/src:rw
+      - C:\Users\Lacav\vsdbg\vs2017u5:/remote_debugger:rw
+      - C:\Users\Lacav\.nuget\packages:/.nuget/packages:ro
       - C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages:/.nuget/fallbackpackages:ro
-      - C:\Users\lacav\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
-      - C:\Users\lacav\AppData\Roaming\ASP.NET\Https:/home/app/.aspnet/https:ro
-      - C:\Users\lacav\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
-      - C:\Users\lacav\AppData\Roaming\Microsoft\UserSecrets:/home/app/.microsoft/usersecrets:ro
+      - C:\Users\Lacav\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+      - C:\Users\Lacav\AppData\Roaming\ASP.NET\Https:/home/app/.aspnet/https:ro
+      - C:\Users\Lacav\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+      - C:\Users\Lacav\AppData\Roaming\Microsoft\UserSecrets:/home/app/.microsoft/usersecrets:ro
       - C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\linux-x64\net8.0:/VSTools:ro
       - C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\HotReload:/HotReloadAgent:ro
 
